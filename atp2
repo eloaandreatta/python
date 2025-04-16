@@ -1,0 +1,10 @@
+atividadeA = int(input("Informe os dias para a atividade A: "))
+atividadeB = int(input("Informe os dias para a atividade B: "))
+atividadeC = int(input("Informe os dias para a atividade C: "))
+
+if atividadeA >0 and atividadeB >0 and atividadeC > 0:
+    soma = atividadeA + atividadeB + atividadeC
+    print(f"Total de dias para conclusão= {soma}")
+
+else:
+    print("Erro! Números negativos não podem ser calculados nesta situação.")

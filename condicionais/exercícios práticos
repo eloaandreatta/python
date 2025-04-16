@@ -1,1 +1,58 @@
+Condicionais = estruturas que nos permitem executar diferentes blocos de código dependendo se uma condição é verdadeira ou falsa.
+if -pipipipopopo- = faça isso
+else -pipipipopopo- = faça outra coisa
+  -> O bloco else é opcional. Ele é avaliado apenas se a condição if retornar falso.
+elif -pipipipopopo- = faça outra coisa *antes* de ir para o else 
+  -> Ordem correta de uso: if - elif - else.
+
+
+
+Operadores de comparação:
+  -Os operadores de comparação são utilizados para comparar valores, retornando True ou False, dependendo da condição estabelecida. 
+> (Maior que) Verifica se um valor é maior que outro x > 10
+< (Menor que) Verifica se um valor é menor que outro x < 10
+== (Igual a) Verifica se um valor é igual a outro x == 10
+!= Diferente de) Verifica se um valor é diferente de outro x != 10
+>= (Maior ou igual a) Verifica se um valor é maior ou igual a outro x >= 10
+<= (Menor ou igual a) Verifica se um valor é menor ou igual a outro x <= 10
+
+
+
+Operadores lógicos:
+  - Ao usarmos estruturas condicionais, é normal precisarmos de operadores lógicos para combinar mais de uma condição. Os operadores mais comuns em Python são:
+    and: retorna verdadeiro apenas se todas as condições forem verdadeiras.
+    or: retorna verdadeiro se pelo menos uma das condições for verdadeira.
+
+-> Operador AND
+Condição 1   Condição 2   Resultado
+Verdadeiro   Verdadeiro   Verdadeiro
+Verdadeiro   Falso        Falso
+Falso        Verdadeiro   Falso
+Falso        Falso        Falso
+-> Operador OR
+Condição 1   Condição 2   Resultado
+Verdadeiro   Verdadeiro   Verdadeiro
+Verdadeiro   Falso        Verdadeiro
+Falso        Verdadeiro   Verdadeiro
+Falso        Falso        Falso
+
+exemplo de código AND: 
+  idade = int(input("Informe sua idade: "))
+  tem_documento = input("Tem documento? (sim/não): ")
+
+  if idade >= 18 and tem_documento == "sim";
+    print("Entrada permitida!)
+  else: 
+    print("Entrada negada.")
+-> Se as duas condições forem atendidas, a entrada é permitida. Caso contrário, ela é negada. 
+
+exemplo de código OR:
+  feriado = input("Hoje é feriado? (sim/não): ")
+  folga = input("Você tem folga hoje? (sim/não): ")
+
+  if feriado == "sim" or folga == "sim":
+    print("Você pode descansar hoje!")
+  else: 
+    print("Dia normal de trabalho.")
+-> Se ambas respostas forem "não", o usuário terá um dia de trabalho normal. Mas, se for feriado OU tiver folga, imprime: "Você pode descansar hoje!".
 

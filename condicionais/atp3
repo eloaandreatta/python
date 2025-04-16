@@ -1,0 +1,8 @@
+temp = int(input("Digite a temperatura atual: "))
+
+if temp > 25:
+    print ("Alerta! Temperatura acima do limite permitido.")
+elif temp < 25 and temp > 22:
+    print("Fique de atento!")
+else:
+    print("Tudo de acordo com o indicado.")
